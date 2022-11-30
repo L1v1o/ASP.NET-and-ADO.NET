@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Vertiefungsarbeit_Livio_Meuli.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<link href="style.css?v=@Guid.NewGuid().ToString()" rel="stylesheet" />
+	<title>GBS 3D-Drucker Reservation</title>
+    <link rel="icon" type="image/svg" href="/tools.svg">
+	<asp:ContentPlaceHolder ID="PlaceHolderHeader" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form" runat="server">
+		<div>
+			<header>
+				GBS NorthWind
+			</header>
+				
+				<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+				</asp:ContentPlaceHolder>
+				<footer style="position:fixed !important;">
+				<span style="margin:1vh !important; font-size: 2vh;">©Livio Meuli 3HWI</span>
+				</footer>
+		</div>
+	</form>
+</body>
+</html>
